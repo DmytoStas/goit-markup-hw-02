@@ -14,6 +14,9 @@ body {
 
   font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .logo,
@@ -33,39 +36,6 @@ body {
   list-style: none;
 }
 
-.nav,
-.address-list,
-.footer-descr,
-.hero-title,
-.benefits,
-.service,
-.team,
-.cards {
-  letter-spacing: 0.02em;
-}
-
-.nav,
-.address-list,
-.footer-descr,
-.hero-btn,
-.benefits-element-descr,
-.team-element-descr,
-.filter-btn,
-.card-category {
-  font-size: 16px;
-}
-
-.nav,
-.address-list,
-.footer-descr,
-.benefits-element-descr,
-.team-element-descr,
-.hero-btn,
-.filter-btn,
-.card-category {
-  line-height: 1.5;
-}
-
 .address-list,
 .footer-descr,
 .benefits-element-descr,
@@ -78,6 +48,8 @@ body {
 .filter-btn {
   cursor: pointer;
   letter-spacing: 0.04em;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* Лого */
