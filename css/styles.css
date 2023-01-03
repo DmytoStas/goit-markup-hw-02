@@ -146,8 +146,9 @@ body {
   font-family: inherit;
   font-weight: inherit;
 
-  width: 170px;
-  height: 51px;
+  /* Add min-width + padding */
+  width: 169px;
+  height: 56px;
 
   background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
