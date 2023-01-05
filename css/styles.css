@@ -12,44 +12,43 @@
 body {
   color: var(--main-dark-text);
 
-  font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  background-color: #fff;
 }
 
 .logo,
 .footer-logo,
-.nav-list-link,
+.nav-link,
 .address-link,
 .card {
   text-decoration: none;
-}
-
-.logo,
-.nav-list-link {
-  color: inherit;
 }
 
 .list {
   list-style: none;
 }
 
-.address-list,
-.footer-descr,
-.benefits-element-descr,
-.team-element-descr,
-.card-category {
-  font-weight: 400;
+.logo,
+.nav-link,
+.card {
+  color: inherit;
+}
+
+.nav-link,
+.hero-btn,
+.filter-btn,
+.section-subtitle {
+  font-weight: 500;
 }
 
 .hero-btn,
 .filter-btn {
   cursor: pointer;
-  letter-spacing: 0.04em;
+  font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
 }
 
 /* Лого */
@@ -77,51 +76,71 @@ body {
 }
 
 /* Навігація сайту */
+.nav-link,
+.address-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .address-link {
   color: var(--secondary-dark-text);
 
   font-style: normal;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
-  color: var(--secondary-dark-text);
-}
-
-.nav-list-link:active {
-  color: var(--accent);
-}
-
+.nav-link:hover,
+.nav-link:focus,
 .address-link:hover,
 .address-link:focus {
   color: var(--accent);
-}
-
-/* Заголовки секцій */
-.benefits-title,
-.service-title,
-.team-title,
-.portfolio-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  text-transform: capitalize;
-}
-
-/* Заголовок елементів списка */
-.benefits-element-title,
-.team-list-member,
-.card-title {
-  font-size: 20px;
-  line-height: 1.2;
 }
 
 /* Футер */
 .footer {
   /* BG для візуалізації білого тексту */
   background: #2e2f42;
+}
 
+.footer-descr {
   color: var(--footer-text);
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Налаштування секцій Main*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section-descr {
+  color: var(--secondary-dark-text);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Visual hidden */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* STUDIO сторінка */
@@ -137,14 +156,12 @@ body {
 
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
 .hero-btn {
   color: var(--main-white);
-
-  font-family: inherit;
-  font-weight: inherit;
 
   /* Add min-width + padding */
   width: 169px;
@@ -158,28 +175,8 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.hero-btn:active {
-  background: #404bbf;
-}
-
-/* Наші переваги */
-.benefits-element-title {
-  font-weight: inherit;
-  text-transform: uppercase;
-}
-
-/* Наша команда */
-.team-list-member {
-  font-weight: inherit;
-}
-
-.team-element-descr,
-.benefits-element-descr {
-  color: var(--secondary-dark-text);
+  background-color: var(--hover-bg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Portfolio сторінка */
@@ -187,9 +184,6 @@ body {
 /* Кнопки фільтрів */
 .filter-btn {
   color: var(--accent);
-
-  font-family: inherit;
-  font-weight: inherit;
 
   height: 48px;
   padding: 12px 24px;
@@ -205,17 +199,5 @@ body {
   background-color: var(--hover-bg);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: none;
-}
-
-/* Картки портфоліо */
-.card {
-  color: inherit;
-}
-.card-title {
-  font-weight: inherit;
-}
-
-.card-category {
-  color: var(--secondary-dark-text);
+  border-color: var(--hover-bg);
 }
